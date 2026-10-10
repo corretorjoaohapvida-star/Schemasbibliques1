@@ -1,612 +1,94 @@
-<!DOCTYPE html>
-<html lang="fr-FR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Plans de la Bible : fiches d’une page pour chaque livre — École du Dimanche</title><meta name="description" content="Des fiches d’une page pour chacun des livres de l’Ancien et du Nouveau Testament."><link rel="icon" href="assets/TSS-Logo-Black1-fr.png"><link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="assets/original.css"><style>.animated { animation-duration: 1s; animation-fill-mode: both; }
-.animated.infinite { animation-iteration-count: infinite; }
-.animated.hinge { animation-duration: 2s; }
-.animated.flipOutX, .animated.flipOutY, .animated.bounceIn, .animated.bounceOut { animation-duration: 0.75s; }
-@keyframes pulse { 
-  0% { transform: scale3d(1, 1, 1); }
-  50% { transform: scale3d(1.05, 1.05, 1.05); }
-  100% { transform: scale3d(1, 1, 1); }
-}
-.pulse { animation-name: pulse; }
-.cbtb html { font-family: sans-serif; text-size-adjust: 100%; }
-.cbtb body { margin: 0px; }
-.cbtb article, .cbtb aside, .cbtb details, .cbtb figcaption, .cbtb figure, .cbtb footer, .cbtb header, .cbtb hgroup, .cbtb main, .cbtb menu, .cbtb nav, .cbtb section, .cbtb summary { display: block; }
-.cbtb audio, .cbtb canvas, .cbtb progress, .cbtb video { display: inline-block; vertical-align: baseline; }
-.cbtb audio:not([controls]) { display: none; height: 0px; }
-.cbtb [hidden], .cbtb template { display: none; }
-.cbtb a { background-color: transparent; }
-.cbtb a:active, .cbtb a:hover { outline: 0px; }
-.cbtb abbr[title] { border-bottom: 1px dotted; }
-.cbtb b, .cbtb strong { font-weight: 700; }
-.cbtb dfn { font-style: italic; }
-.cbtb h1 { font-size: 2em; margin: 0.67em 0px; }
-.cbtb mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
-.cbtb small { font-size: 80%; }
-.cbtb sub, .cbtb sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-.cbtb sup { top: -0.5em; }
-.cbtb sub { bottom: -0.25em; }
-.cbtb img { border: 0px; }
-.cbtb svg:not(:root) { overflow: hidden; }
-.cbtb figure { margin: 1em 40px; }
-.cbtb hr { box-sizing: content-box; height: 0px; }
-.cbtb pre { overflow: auto; }
-.cbtb code, .cbtb kbd, .cbtb pre, .cbtb samp { font-family: monospace, monospace; font-size: 1em; }
-.cbtb button, .cbtb input, .cbtb optgroup, .cbtb select, .cbtb textarea { color: inherit; font: inherit; margin: 0px; }
-.cbtb button { overflow: visible; }
-.cbtb button, .cbtb select { text-transform: none; }
-.cbtb button, .cbtb html input[type="button"], .cbtb input[type="reset"], .cbtb input[type="submit"] { appearance: button; cursor: pointer; }
-.cbtb button[disabled], .cbtb html input[disabled] { cursor: default; }
-.cbtb input { line-height: normal; }
-.cbtb input[type="checkbox"], .cbtb input[type="radio"] { box-sizing: border-box; padding: 0px; }
-.cbtb input[type="number"]::-webkit-inner-spin-button, .cbtb input[type="number"]::-webkit-outer-spin-button { height: auto; }
-.cbtb input[type="search"] { appearance: textfield; box-sizing: content-box; }
-.cbtb input[type="search"]::-webkit-search-cancel-button, .cbtb input[type="search"]::-webkit-search-decoration { appearance: none; }
-.cbtb fieldset { border: 1px solid silver; margin: 0px 2px; padding: 0.35em 0.625em 0.75em; }
-.cbtb legend { border: 0px; padding: 0px; }
-.cbtb textarea { overflow: auto; }
-.cbtb optgroup { font-weight: 700; }
-.cbtb table { border-collapse: collapse; border-spacing: 0px; }
-.cbtb td, .cbtb th { padding: 0px; }
-.cbtb * { box-sizing: border-box; }
-.cbtb ::before, .cbtb ::after { box-sizing: border-box; }
-.cbtb html { font-size: 10px; -webkit-tap-highlight-color: transparent; }
-.cbtb body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); }
-.cbtb input, .cbtb button, .cbtb select, .cbtb textarea { font-family: inherit; font-size: inherit; line-height: inherit; }
-.cbtb a { color: rgb(51, 122, 183); text-decoration: none; }
-.cbtb a:hover, .cbtb a:focus { color: rgb(35, 82, 124); text-decoration: underline; }
-.cbtb a:focus { outline: -webkit-focus-ring-color auto 5px; outline-offset: -2px; }
-.cbtb figure { margin: 0px; }
-.cbtb img { vertical-align: middle; }
-.cbtb .cbtb-img-responsive { display: block; max-width: 100%; height: auto; }
-.cbtb .cbtb-img-rounded { border-radius: 6px; }
-.cbtb .cbtb-img-thumbnail { padding: 4px; line-height: 1.42857; background-color: rgb(255, 255, 255); border: 1px solid rgb(221, 221, 221); border-radius: 4px; transition: 0.2s ease-in-out; display: inline-block; max-width: 100%; height: auto; }
-.cbtb .cbtb-img-circle { border-radius: 50%; }
-.cbtb hr { margin-top: 20px; margin-bottom: 20px; border-width: 1px 0px 0px; border-style: solid none none; border-color: rgb(238, 238, 238) currentcolor currentcolor; border-image: none; }
-.cbtb .cbtb-sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); border: 0px; }
-.cbtb .cbtb-sr-only-focusable:active, .cbtb .cbtb-sr-only-focusable:focus { position: static; width: auto; height: auto; margin: 0px; overflow: visible; clip: auto; }
-.cbtb [role="button"] { cursor: pointer; }
-.cbtb .cbtb-container { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
-@media (min-width: 768px) {
-  .cbtb .cbtb-container { width: 750px; }
-}
-@media (min-width: 992px) {
-  .cbtb .cbtb-container { width: 970px; }
-}
-@media (min-width: 1200px) {
-  .cbtb .cbtb-container { width: 1170px; }
-}
-.cbtb .cbtb-container-fluid { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
-.cbtb .cbtb-row { margin-left: -15px; margin-right: -15px; }
-.cbtb .cbtb-col-xs-1, .cbtb .cbtb-col-sm-1, .cbtb .cbtb-col-md-1, .cbtb .cbtb-col-lg-1, .cbtb .cbtb-col-xs-2, .cbtb .cbtb-col-sm-2, .cbtb .cbtb-col-md-2, .cbtb .cbtb-col-lg-2, .cbtb .cbtb-col-xs-3, .cbtb .cbtb-col-sm-3, .cbtb .cbtb-col-md-3, .cbtb .cbtb-col-lg-3, .cbtb .cbtb-col-xs-4, .cbtb .cbtb-col-sm-4, .cbtb .cbtb-col-md-4, .cbtb .cbtb-col-lg-4, .cbtb .cbtb-col-xs-5, .cbtb .cbtb-col-sm-5, .cbtb .cbtb-col-md-5, .cbtb .cbtb-col-lg-5, .cbtb .cbtb-col-xs-6, .cbtb .cbtb-col-sm-6, .cbtb .cbtb-col-md-6, .cbtb .cbtb-col-lg-6, .cbtb .cbtb-col-xs-7, .cbtb .cbtb-col-sm-7, .cbtb .cbtb-col-md-7, .cbtb .cbtb-col-lg-7, .cbtb .cbtb-col-xs-8, .cbtb .cbtb-col-sm-8, .cbtb .cbtb-col-md-8, .cbtb .cbtb-col-lg-8, .cbtb .cbtb-col-xs-9, .cbtb .cbtb-col-sm-9, .cbtb .cbtb-col-md-9, .cbtb .cbtb-col-lg-9, .cbtb .cbtb-col-xs-10, .cbtb .cbtb-col-sm-10, .cbtb .cbtb-col-md-10, .cbtb .cbtb-col-lg-10, .cbtb .cbtb-col-xs-11, .cbtb .cbtb-col-sm-11, .cbtb .cbtb-col-md-11, .cbtb .cbtb-col-lg-11, .cbtb .cbtb-col-xs-12, .cbtb .cbtb-col-sm-12, .cbtb .cbtb-col-md-12, .cbtb .cbtb-col-lg-12 { position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; }
-.cbtb .cbtb-col-xs-1, .cbtb .cbtb-col-xs-2, .cbtb .cbtb-col-xs-3, .cbtb .cbtb-col-xs-4, .cbtb .cbtb-col-xs-5, .cbtb .cbtb-col-xs-6, .cbtb .cbtb-col-xs-7, .cbtb .cbtb-col-xs-8, .cbtb .cbtb-col-xs-9, .cbtb .cbtb-col-xs-10, .cbtb .cbtb-col-xs-11, .cbtb .cbtb-col-xs-12 { float: left; }
-.cbtb .cbtb-col-xs-12 { width: 100%; }
-.cbtb .cbtb-col-xs-11 { width: 91.6667%; }
-.cbtb .cbtb-col-xs-10 { width: 83.3333%; }
-.cbtb .cbtb-col-xs-9 { width: 75%; }
-.cbtb .cbtb-col-xs-8 { width: 66.6667%; }
-.cbtb .cbtb-col-xs-7 { width: 58.3333%; }
-.cbtb .cbtb-col-xs-6 { width: 50%; }
-.cbtb .cbtb-col-xs-5 { width: 41.6667%; }
-.cbtb .cbtb-col-xs-4 { width: 33.3333%; }
-.cbtb .cbtb-col-xs-3 { width: 25%; }
-.cbtb .cbtb-col-xs-2 { width: 16.6667%; }
-.cbtb .cbtb-col-xs-1 { width: 8.33333%; }
-.cbtb .cbtb-col-xs-pull-12 { right: 100%; }
-.cbtb .cbtb-col-xs-pull-11 { right: 91.6667%; }
-.cbtb .cbtb-col-xs-pull-10 { right: 83.3333%; }
-.cbtb .cbtb-col-xs-pull-9 { right: 75%; }
-.cbtb .cbtb-col-xs-pull-8 { right: 66.6667%; }
-.cbtb .cbtb-col-xs-pull-7 { right: 58.3333%; }
-.cbtb .cbtb-col-xs-pull-6 { right: 50%; }
-.cbtb .cbtb-col-xs-pull-5 { right: 41.6667%; }
-.cbtb .cbtb-col-xs-pull-4 { right: 33.3333%; }
-.cbtb .cbtb-col-xs-pull-3 { right: 25%; }
-.cbtb .cbtb-col-xs-pull-2 { right: 16.6667%; }
-.cbtb .cbtb-col-xs-pull-1 { right: 8.33333%; }
-.cbtb .cbtb-col-xs-pull-0 { right: auto; }
-.cbtb .cbtb-col-xs-push-12 { left: 100%; }
-.cbtb .cbtb-col-xs-push-11 { left: 91.6667%; }
-.cbtb .cbtb-col-xs-push-10 { left: 83.3333%; }
-.cbtb .cbtb-col-xs-push-9 { left: 75%; }
-.cbtb .cbtb-col-xs-push-8 { left: 66.6667%; }
-.cbtb .cbtb-col-xs-push-7 { left: 58.3333%; }
-.cbtb .cbtb-col-xs-push-6 { left: 50%; }
-.cbtb .cbtb-col-xs-push-5 { left: 41.6667%; }
-.cbtb .cbtb-col-xs-push-4 { left: 33.3333%; }
-.cbtb .cbtb-col-xs-push-3 { left: 25%; }
-.cbtb .cbtb-col-xs-push-2 { left: 16.6667%; }
-.cbtb .cbtb-col-xs-push-1 { left: 8.33333%; }
-.cbtb .cbtb-col-xs-push-0 { left: auto; }
-.cbtb .cbtb-col-xs-offset-12 { margin-left: 100%; }
-.cbtb .cbtb-col-xs-offset-11 { margin-left: 91.6667%; }
-.cbtb .cbtb-col-xs-offset-10 { margin-left: 83.3333%; }
-.cbtb .cbtb-col-xs-offset-9 { margin-left: 75%; }
-.cbtb .cbtb-col-xs-offset-8 { margin-left: 66.6667%; }
-.cbtb .cbtb-col-xs-offset-7 { margin-left: 58.3333%; }
-.cbtb .cbtb-col-xs-offset-6 { margin-left: 50%; }
-.cbtb .cbtb-col-xs-offset-5 { margin-left: 41.6667%; }
-.cbtb .cbtb-col-xs-offset-4 { margin-left: 33.3333%; }
-.cbtb .cbtb-col-xs-offset-3 { margin-left: 25%; }
-.cbtb .cbtb-col-xs-offset-2 { margin-left: 16.6667%; }
-.cbtb .cbtb-col-xs-offset-1 { margin-left: 8.33333%; }
-.cbtb .cbtb-col-xs-offset-0 { margin-left: 0px; }
-@media (min-width: 768px) {
-  .cbtb .cbtb-col-sm-1, .cbtb .cbtb-col-sm-2, .cbtb .cbtb-col-sm-3, .cbtb .cbtb-col-sm-4, .cbtb .cbtb-col-sm-5, .cbtb .cbtb-col-sm-6, .cbtb .cbtb-col-sm-7, .cbtb .cbtb-col-sm-8, .cbtb .cbtb-col-sm-9, .cbtb .cbtb-col-sm-10, .cbtb .cbtb-col-sm-11, .cbtb .cbtb-col-sm-12 { float: left; }
-  .cbtb .cbtb-col-sm-12 { width: 100%; }
-  .cbtb .cbtb-col-sm-11 { width: 91.6667%; }
-  .cbtb .cbtb-col-sm-10 { width: 83.3333%; }
-  .cbtb .cbtb-col-sm-9 { width: 75%; }
-  .cbtb .cbtb-col-sm-8 { width: 66.6667%; }
-  .cbtb .cbtb-col-sm-7 { width: 58.3333%; }
-  .cbtb .cbtb-col-sm-6 { width: 50%; }
-  .cbtb .cbtb-col-sm-5 { width: 41.6667%; }
-  .cbtb .cbtb-col-sm-4 { width: 33.3333%; }
-  .cbtb .cbtb-col-sm-3 { width: 25%; }
-  .cbtb .cbtb-col-sm-2 { width: 16.6667%; }
-  .cbtb .cbtb-col-sm-1 { width: 8.33333%; }
-  .cbtb .cbtb-col-sm-pull-12 { right: 100%; }
-  .cbtb .cbtb-col-sm-pull-11 { right: 91.6667%; }
-  .cbtb .cbtb-col-sm-pull-10 { right: 83.3333%; }
-  .cbtb .cbtb-col-sm-pull-9 { right: 75%; }
-  .cbtb .cbtb-col-sm-pull-8 { right: 66.6667%; }
-  .cbtb .cbtb-col-sm-pull-7 { right: 58.3333%; }
-  .cbtb .cbtb-col-sm-pull-6 { right: 50%; }
-  .cbtb .cbtb-col-sm-pull-5 { right: 41.6667%; }
-  .cbtb .cbtb-col-sm-pull-4 { right: 33.3333%; }
-  .cbtb .cbtb-col-sm-pull-3 { right: 25%; }
-  .cbtb .cbtb-col-sm-pull-2 { right: 16.6667%; }
-  .cbtb .cbtb-col-sm-pull-1 { right: 8.33333%; }
-  .cbtb .cbtb-col-sm-pull-0 { right: auto; }
-  .cbtb .cbtb-col-sm-push-12 { left: 100%; }
-  .cbtb .cbtb-col-sm-push-11 { left: 91.6667%; }
-  .cbtb .cbtb-col-sm-push-10 { left: 83.3333%; }
-  .cbtb .cbtb-col-sm-push-9 { left: 75%; }
-  .cbtb .cbtb-col-sm-push-8 { left: 66.6667%; }
-  .cbtb .cbtb-col-sm-push-7 { left: 58.3333%; }
-  .cbtb .cbtb-col-sm-push-6 { left: 50%; }
-  .cbtb .cbtb-col-sm-push-5 { left: 41.6667%; }
-  .cbtb .cbtb-col-sm-push-4 { left: 33.3333%; }
-  .cbtb .cbtb-col-sm-push-3 { left: 25%; }
-  .cbtb .cbtb-col-sm-push-2 { left: 16.6667%; }
-  .cbtb .cbtb-col-sm-push-1 { left: 8.33333%; }
-  .cbtb .cbtb-col-sm-push-0 { left: auto; }
-  .cbtb .cbtb-col-sm-offset-12 { margin-left: 100%; }
-  .cbtb .cbtb-col-sm-offset-11 { margin-left: 91.6667%; }
-  .cbtb .cbtb-col-sm-offset-10 { margin-left: 83.3333%; }
-  .cbtb .cbtb-col-sm-offset-9 { margin-left: 75%; }
-  .cbtb .cbtb-col-sm-offset-8 { margin-left: 66.6667%; }
-  .cbtb .cbtb-col-sm-offset-7 { margin-left: 58.3333%; }
-  .cbtb .cbtb-col-sm-offset-6 { margin-left: 50%; }
-  .cbtb .cbtb-col-sm-offset-5 { margin-left: 41.6667%; }
-  .cbtb .cbtb-col-sm-offset-4 { margin-left: 33.3333%; }
-  .cbtb .cbtb-col-sm-offset-3 { margin-left: 25%; }
-  .cbtb .cbtb-col-sm-offset-2 { margin-left: 16.6667%; }
-  .cbtb .cbtb-col-sm-offset-1 { margin-left: 8.33333%; }
-  .cbtb .cbtb-col-sm-offset-0 { margin-left: 0px; }
-}
-@media (min-width: 992px) {
-  .cbtb .cbtb-col-md-1, .cbtb .cbtb-col-md-2, .cbtb .cbtb-col-md-3, .cbtb .cbtb-col-md-4, .cbtb .cbtb-col-md-5, .cbtb .cbtb-col-md-6, .cbtb .cbtb-col-md-7, .cbtb .cbtb-col-md-8, .cbtb .cbtb-col-md-9, .cbtb .cbtb-col-md-10, .cbtb .cbtb-col-md-11, .cbtb .cbtb-col-md-12 { float: left; }
-  .cbtb .cbtb-col-md-12 { width: 100%; }
-  .cbtb .cbtb-col-md-11 { width: 91.6667%; }
-  .cbtb .cbtb-col-md-10 { width: 83.3333%; }
-  .cbtb .cbtb-col-md-9 { width: 75%; }
-  .cbtb .cbtb-col-md-8 { width: 66.6667%; }
-  .cbtb .cbtb-col-md-7 { width: 58.3333%; }
-  .cbtb .cbtb-col-md-6 { width: 50%; }
-  .cbtb .cbtb-col-md-5 { width: 41.6667%; }
-  .cbtb .cbtb-col-md-4 { width: 33.3333%; }
-  .cbtb .cbtb-col-md-3 { width: 25%; }
-  .cbtb .cbtb-col-md-2 { width: 16.6667%; }
-  .cbtb .cbtb-col-md-1 { width: 8.33333%; }
-  .cbtb .cbtb-col-md-pull-12 { right: 100%; }
-  .cbtb .cbtb-col-md-pull-11 { right: 91.6667%; }
-  .cbtb .cbtb-col-md-pull-10 { right: 83.3333%; }
-  .cbtb .cbtb-col-md-pull-9 { right: 75%; }
-  .cbtb .cbtb-col-md-pull-8 { right: 66.6667%; }
-  .cbtb .cbtb-col-md-pull-7 { right: 58.3333%; }
-  .cbtb .cbtb-col-md-pull-6 { right: 50%; }
-  .cbtb .cbtb-col-md-pull-5 { right: 41.6667%; }
-  .cbtb .cbtb-col-md-pull-4 { right: 33.3333%; }
-  .cbtb .cbtb-col-md-pull-3 { right: 25%; }
-  .cbtb .cbtb-col-md-pull-2 { right: 16.6667%; }
-  .cbtb .cbtb-col-md-pull-1 { right: 8.33333%; }
-  .cbtb .cbtb-col-md-pull-0 { right: auto; }
-  .cbtb .cbtb-col-md-push-12 { left: 100%; }
-  .cbtb .cbtb-col-md-push-11 { left: 91.6667%; }
-  .cbtb .cbtb-col-md-push-10 { left: 83.3333%; }
-  .cbtb .cbtb-col-md-push-9 { left: 75%; }
-  .cbtb .cbtb-col-md-push-8 { left: 66.6667%; }
-  .cbtb .cbtb-col-md-push-7 { left: 58.3333%; }
-  .cbtb .cbtb-col-md-push-6 { left: 50%; }
-  .cbtb .cbtb-col-md-push-5 { left: 41.6667%; }
-  .cbtb .cbtb-col-md-push-4 { left: 33.3333%; }
-  .cbtb .cbtb-col-md-push-3 { left: 25%; }
-  .cbtb .cbtb-col-md-push-2 { left: 16.6667%; }
-  .cbtb .cbtb-col-md-push-1 { left: 8.33333%; }
-  .cbtb .cbtb-col-md-push-0 { left: auto; }
-  .cbtb .cbtb-col-md-offset-12 { margin-left: 100%; }
-  .cbtb .cbtb-col-md-offset-11 { margin-left: 91.6667%; }
-  .cbtb .cbtb-col-md-offset-10 { margin-left: 83.3333%; }
-  .cbtb .cbtb-col-md-offset-9 { margin-left: 75%; }
-  .cbtb .cbtb-col-md-offset-8 { margin-left: 66.6667%; }
-  .cbtb .cbtb-col-md-offset-7 { margin-left: 58.3333%; }
-  .cbtb .cbtb-col-md-offset-6 { margin-left: 50%; }
-  .cbtb .cbtb-col-md-offset-5 { margin-left: 41.6667%; }
-  .cbtb .cbtb-col-md-offset-4 { margin-left: 33.3333%; }
-  .cbtb .cbtb-col-md-offset-3 { margin-left: 25%; }
-  .cbtb .cbtb-col-md-offset-2 { margin-left: 16.6667%; }
-  .cbtb .cbtb-col-md-offset-1 { margin-left: 8.33333%; }
-  .cbtb .cbtb-col-md-offset-0 { margin-left: 0px; }
-}
-@media (min-width: 1200px) {
-  .cbtb .cbtb-col-lg-1, .cbtb .cbtb-col-lg-2, .cbtb .cbtb-col-lg-3, .cbtb .cbtb-col-lg-4, .cbtb .cbtb-col-lg-5, .cbtb .cbtb-col-lg-6, .cbtb .cbtb-col-lg-7, .cbtb .cbtb-col-lg-8, .cbtb .cbtb-col-lg-9, .cbtb .cbtb-col-lg-10, .cbtb .cbtb-col-lg-11, .cbtb .cbtb-col-lg-12 { float: left; }
-  .cbtb .cbtb-col-lg-12 { width: 100%; }
-  .cbtb .cbtb-col-lg-11 { width: 91.6667%; }
-  .cbtb .cbtb-col-lg-10 { width: 83.3333%; }
-  .cbtb .cbtb-col-lg-9 { width: 75%; }
-  .cbtb .cbtb-col-lg-8 { width: 66.6667%; }
-  .cbtb .cbtb-col-lg-7 { width: 58.3333%; }
-  .cbtb .cbtb-col-lg-6 { width: 50%; }
-  .cbtb .cbtb-col-lg-5 { width: 41.6667%; }
-  .cbtb .cbtb-col-lg-4 { width: 33.3333%; }
-  .cbtb .cbtb-col-lg-3 { width: 25%; }
-  .cbtb .cbtb-col-lg-2 { width: 16.6667%; }
-  .cbtb .cbtb-col-lg-1 { width: 8.33333%; }
-  .cbtb .cbtb-col-lg-pull-12 { right: 100%; }
-  .cbtb .cbtb-col-lg-pull-11 { right: 91.6667%; }
-  .cbtb .cbtb-col-lg-pull-10 { right: 83.3333%; }
-  .cbtb .cbtb-col-lg-pull-9 { right: 75%; }
-  .cbtb .cbtb-col-lg-pull-8 { right: 66.6667%; }
-  .cbtb .cbtb-col-lg-pull-7 { right: 58.3333%; }
-  .cbtb .cbtb-col-lg-pull-6 { right: 50%; }
-  .cbtb .cbtb-col-lg-pull-5 { right: 41.6667%; }
-  .cbtb .cbtb-col-lg-pull-4 { right: 33.3333%; }
-  .cbtb .cbtb-col-lg-pull-3 { right: 25%; }
-  .cbtb .cbtb-col-lg-pull-2 { right: 16.6667%; }
-  .cbtb .cbtb-col-lg-pull-1 { right: 8.33333%; }
-  .cbtb .cbtb-col-lg-pull-0 { right: auto; }
-  .cbtb .cbtb-col-lg-push-12 { left: 100%; }
-  .cbtb .cbtb-col-lg-push-11 { left: 91.6667%; }
-  .cbtb .cbtb-col-lg-push-10 { left: 83.3333%; }
-  .cbtb .cbtb-col-lg-push-9 { left: 75%; }
-  .cbtb .cbtb-col-lg-push-8 { left: 66.6667%; }
-  .cbtb .cbtb-col-lg-push-7 { left: 58.3333%; }
-  .cbtb .cbtb-col-lg-push-6 { left: 50%; }
-  .cbtb .cbtb-col-lg-push-5 { left: 41.6667%; }
-  .cbtb .cbtb-col-lg-push-4 { left: 33.3333%; }
-  .cbtb .cbtb-col-lg-push-3 { left: 25%; }
-  .cbtb .cbtb-col-lg-push-2 { left: 16.6667%; }
-  .cbtb .cbtb-col-lg-push-1 { left: 8.33333%; }
-  .cbtb .cbtb-col-lg-push-0 { left: auto; }
-  .cbtb .cbtb-col-lg-offset-12 { margin-left: 100%; }
-  .cbtb .cbtb-col-lg-offset-11 { margin-left: 91.6667%; }
-  .cbtb .cbtb-col-lg-offset-10 { margin-left: 83.3333%; }
-  .cbtb .cbtb-col-lg-offset-9 { margin-left: 75%; }
-  .cbtb .cbtb-col-lg-offset-8 { margin-left: 66.6667%; }
-  .cbtb .cbtb-col-lg-offset-7 { margin-left: 58.3333%; }
-  .cbtb .cbtb-col-lg-offset-6 { margin-left: 50%; }
-  .cbtb .cbtb-col-lg-offset-5 { margin-left: 41.6667%; }
-  .cbtb .cbtb-col-lg-offset-4 { margin-left: 33.3333%; }
-  .cbtb .cbtb-col-lg-offset-3 { margin-left: 25%; }
-  .cbtb .cbtb-col-lg-offset-2 { margin-left: 16.6667%; }
-  .cbtb .cbtb-col-lg-offset-1 { margin-left: 8.33333%; }
-  .cbtb .cbtb-col-lg-offset-0 { margin-left: 0px; }
-}
-.cbtb .cbtb-fade { opacity: 0; transition: opacity 0.15s linear; }
-.cbtb .cbtb-fade.cbtb-in { opacity: 1; }
-.cbtb .cbtb-collapse { display: none; }
-.cbtb .cbtb-collapse.cbtb-in { display: block; }
-.cbtb tr.cbtb-collapse.cbtb-in { display: table-row; }
-.cbtb tbody.cbtb-collapse.cbtb-in { display: table-row-group; }
-.cbtb .cbtb-collapsing { position: relative; height: 0px; overflow: hidden; transition-property: height, visibility; transition-duration: 0.35s; transition-timing-function: ease; }
-.cbtb .cbtb-close { float: right; font-size: 21px; font-weight: 700; line-height: 1; color: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 0px 1px 0px; opacity: 0.2; }
-.cbtb .cbtb-close:hover, .cbtb .cbtb-close:focus { color: rgb(0, 0, 0); text-decoration: none; cursor: pointer; opacity: 0.5; }
-.cbtb button.cbtb-close { padding: 0px; cursor: pointer; background: transparent; border: 0px; appearance: none; }
-.cbtb .cbtb-modal-open { overflow: hidden; }
-.cbtb .cbtb-modal { display: none; overflow: hidden; position: fixed; inset: 0px; z-index: 1050; outline: 0px; }
-.cbtb .cbtb-modal.cbtb-fade .cbtb-modal-dialog { transform: translate(0px, -25%); transition: transform 0.3s ease-out; }
-.cbtb .cbtb-modal.cbtb-in .cbtb-modal-dialog { transform: translate(0px, 0px); }
-.cbtb .cbtb-modal-open .cbtb-modal { overflow: hidden auto; }
-.cbtb .cbtb-modal-dialog { position: relative; width: auto; margin: 10px; }
-.cbtb .cbtb-modal-content { position: relative; background-color: rgb(255, 255, 255); border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 9px; background-clip: padding-box; outline: 0px; }
-.cbtb .cbtb-modal-backdrop { position: fixed; inset: 0px; z-index: 1040; background-color: rgb(0, 0, 0); }
-.cbtb .cbtb-modal-backdrop.cbtb-fade { opacity: 0; }
-.cbtb .cbtb-modal-backdrop.cbtb-in { opacity: 0.5; }
-.cbtb .cbtb-modal-header { padding: 15px; border-bottom: 1px solid rgb(229, 229, 229); min-height: 16.4286px; }
-.cbtb .cbtb-modal-header .cbtb-close { margin-top: -2px; }
-.cbtb .cbtb-modal-title { margin: 0px; line-height: 1.42857; }
-.cbtb .cbtb-modal-body { position: relative; padding: 15px; }
-.cbtb .cbtb-modal-footer { padding: 15px; text-align: right; border-top: 1px solid rgb(229, 229, 229); }
-.cbtb .cbtb-modal-footer .cbtb-btn + .cbtb-btn { margin-left: 5px; margin-bottom: 0px; }
-.cbtb .cbtb-modal-footer .cbtb-btn-group .cbtb-btn + .cbtb-btn { margin-left: -1px; }
-.cbtb .cbtb-modal-footer .cbtb-btn-block + .cbtb-btn-block { margin-left: 0px; }
-.cbtb .cbtb-modal-scrollbar-measure { position: absolute; top: -9999px; width: 50px; height: 50px; overflow: scroll; }
-@media (min-width: 768px) {
-  .cbtb .cbtb-modal-dialog { width: 600px; margin: 30px auto; }
-  .cbtb .cbtb-modal-content { box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px; }
-  .cbtb .cbtb-modal-sm { width: 300px; }
-}
-@media (min-width: 992px) {
-  .cbtb .cbtb-modal-lg { width: 900px; }
-}
-.cbtb .cbtb-clearfix::before, .cbtb .cbtb-clearfix::after, .cbtb .cbtb-container::before, .cbtb .cbtb-container::after, .cbtb .cbtb-container-fluid::before, .cbtb .cbtb-container-fluid::after, .cbtb .cbtb-row::before, .cbtb .cbtb-row::after, .cbtb .cbtb-modal-footer::before, .cbtb .cbtb-modal-footer::after { content: " "; display: table; }
-.cbtb .cbtb-clearfix::after, .cbtb .cbtb-container::after, .cbtb .cbtb-container-fluid::after, .cbtb .cbtb-row::after, .cbtb .cbtb-modal-footer::after { clear: both; }
-.cbtb .cbtb-center-block { display: block; margin-left: auto; margin-right: auto; }
-.cbtb .cbtb-pull-right { float: right !important; }
-.cbtb .cbtb-pull-left { float: left !important; }
-.cbtb .cbtb-hide { display: none !important; }
-.cbtb .cbtb-show { display: block !important; }
-.cbtb .cbtb-invisible { visibility: hidden; }
-.cbtb .cbtb-text-hide { font: 0px / 0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0px; }
-.cbtb .cbtb-hidden { display: none !important; }
-.cbtb .cbtb-affix { position: fixed; }
-.cbtb .cbtb-visible-xs, .cbtb .cbtb-visible-sm, .cbtb .cbtb-visible-md, .cbtb .cbtb-visible-lg { display: none !important; }
-.cbtb .cbtb-visible-xs-block, .cbtb .cbtb-visible-xs-inline, .cbtb .cbtb-visible-xs-inline-block, .cbtb .cbtb-visible-sm-block, .cbtb .cbtb-visible-sm-inline, .cbtb .cbtb-visible-sm-inline-block, .cbtb .cbtb-visible-md-block, .cbtb .cbtb-visible-md-inline, .cbtb .cbtb-visible-md-inline-block, .cbtb .cbtb-visible-lg-block, .cbtb .cbtb-visible-lg-inline, .cbtb .cbtb-visible-lg-inline-block { display: none !important; }
-@media (max-width: 767px) {
-  .cbtb .cbtb-visible-xs { display: block !important; }
-  .cbtb table.cbtb-visible-xs { display: table !important; }
-  .cbtb tr.cbtb-visible-xs { display: table-row !important; }
-  .cbtb th.cbtb-visible-xs, .cbtb td.cbtb-visible-xs { display: table-cell !important; }
-}
-@media (max-width: 767px) {
-  .cbtb .cbtb-visible-xs-block { display: block !important; }
-}
-@media (max-width: 767px) {
-  .cbtb .cbtb-visible-xs-inline { display: inline !important; }
-}
-@media (max-width: 767px) {
-  .cbtb .cbtb-visible-xs-inline-block { display: inline-block !important; }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cbtb .cbtb-visible-sm { display: block !important; }
-  .cbtb table.cbtb-visible-sm { display: table !important; }
-  .cbtb tr.cbtb-visible-sm { display: table-row !important; }
-  .cbtb th.cbtb-visible-sm, .cbtb td.cbtb-visible-sm { display: table-cell !important; }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cbtb .cbtb-visible-sm-block { display: block !important; }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cbtb .cbtb-visible-sm-inline { display: inline !important; }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cbtb .cbtb-visible-sm-inline-block { display: inline-block !important; }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .cbtb .cbtb-visible-md { display: block !important; }
-  .cbtb table.cbtb-visible-md { display: table !important; }
-  .cbtb tr.cbtb-visible-md { display: table-row !important; }
-  .cbtb th.cbtb-visible-md, .cbtb td.cbtb-visible-md { display: table-cell !important; }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .cbtb .cbtb-visible-md-block { display: block !important; }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .cbtb .cbtb-visible-md-inline { display: inline !important; }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .cbtb .cbtb-visible-md-inline-block { display: inline-block !important; }
-}
-@media (min-width: 1200px) {
-  .cbtb .cbtb-visible-lg { display: block !important; }
-  .cbtb table.cbtb-visible-lg { display: table !important; }
-  .cbtb tr.cbtb-visible-lg { display: table-row !important; }
-  .cbtb th.cbtb-visible-lg, .cbtb td.cbtb-visible-lg { display: table-cell !important; }
-}
-@media (min-width: 1200px) {
-  .cbtb .cbtb-visible-lg-block { display: block !important; }
-}
-@media (min-width: 1200px) {
-  .cbtb .cbtb-visible-lg-inline { display: inline !important; }
-}
-@media (min-width: 1200px) {
-  .cbtb .cbtb-visible-lg-inline-block { display: inline-block !important; }
-}
-@media (max-width: 767px) {
-  .cbtb .cbtb-hidden-xs { display: none !important; }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .cbtb .cbtb-hidden-sm { display: none !important; }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .cbtb .cbtb-hidden-md { display: none !important; }
-}
-@media (min-width: 1200px) {
-  .cbtb .cbtb-hidden-lg { display: none !important; }
-}
-.cbtb .cbtb-visible-print { display: none !important; }
-@media print {
-  .cbtb .cbtb-visible-print { display: block !important; }
-  .cbtb table.cbtb-visible-print { display: table !important; }
-  .cbtb tr.cbtb-visible-print { display: table-row !important; }
-  .cbtb th.cbtb-visible-print, .cbtb td.cbtb-visible-print { display: table-cell !important; }
-}
-.cbtb .cbtb-visible-print-block { display: none !important; }
-@media print {
-  .cbtb .cbtb-visible-print-block { display: block !important; }
-}
-.cbtb .cbtb-visible-print-inline { display: none !important; }
-@media print {
-  .cbtb .cbtb-visible-print-inline { display: inline !important; }
-}
-.cbtb .cbtb-visible-print-inline-block { display: none !important; }
-@media print {
-  .cbtb .cbtb-visible-print-inline-block { display: inline-block !important; }
-}
-@media print {
-  .cbtb .cbtb-hidden-print { display: none !important; }
-}
-.cbtb br { display: block; }
-.cbtb ::before, .cbtb ::after { display: none; }
-.cbtb .header-mode .show-header { display: block !important; }
-.cbtb .header-mode .show-tab { display: none !important; }
-.cbtb .tab-mode .show-tab { display: block !important; }
-.cbtb .tab-mode .show-header { display: none !important; }
-.cbtb .trust-badge .show-header { display: block !important; }
-.cbtb .trust-badge .show-tab { display: none !important; }
-.cbtb .cbtb-modal-dialog .show-tab { display: block !important; }
-.cbtb .cbtb-modal-dialog .show-header { display: none !important; }
-@media (min-width: 480px) {
-  .cbtb .trust-badge.tab .show-tab { display: block !important; }
-  .cbtb .trust-badge.tab .show-header { display: none !important; }
-}
-@media (min-width: 768px) {
-  .cbtb .cbtb-modal-dialog.header .show-header { display: block !important; }
-  .cbtb .cbtb-modal-dialog.header .show-tab { display: none !important; }
-}
-.cbtb .trust-badge { background-color: white; width: 100%; position: relative; padding: 0px; min-height: 26px; }
-.cbtb .trust-badge a { outline: none; }
-.cbtb .trust-badge a img { margin-top: 4px; max-height: 18px; }
-.cbtb .trust-badge a img.accented { margin-top: 3px; }
-.cbtb .trust-badge.header { border-width: medium !important; border-style: none !important; border-color: currentcolor !important; border-image: none !important; }
-.cbtb .trust-badge.header img:hover { animation: 500ms ease 0s 1 normal none running pulse; }
-@media (max-width: 480px) {
-  .cbtb .trust-badge { border-width: medium !important; border-style: none !important; border-color: currentcolor !important; border-image: none !important; display: none !important; }
-  .cbtb .trust-badge img:hover { animation: 500ms ease 0s 1 normal none running pulse; }
-}
-@media (min-width: 480px) {
-  .cbtb .trust-badge.tab { position: absolute; z-index: 2147483646; padding: 5px 10px; border-radius: 0px 0px 5px 5px; width: 190px; height: 50px; top: 0px; left: 10px; }
-  .cbtb .trust-badge.tab:hover { animation: 500ms ease 0s 1 normal none running pulse; }
-  .cbtb .trust-badge.tab a img { max-height: 100%; max-width: 100%; }
-  .cbtb .trust-badge.tab.top-left, .cbtb .trust-badge.tab.top-right { border-top-width: medium; border-top-style: none; border-top-color: currentcolor; }
-  .cbtb .trust-badge.tab.top-right, .cbtb .trust-badge.tab.bottom-right { left: auto; right: 10px; }
-  .cbtb .trust-badge.tab.bottom-left, .cbtb .trust-badge.tab.bottom-right { position: fixed; top: auto; bottom: 0px; border-radius: 5px 5px 0px 0px; border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
-}
-@media (max-width: 480px) {
-  .cbtb .cbtb-modal, .cbtb .cbtb-modal-backdrop, .cbtb .cbtb-modal.cbtb-fade.cbtb-in { display: none !important; }
-}
-.cbtb #cbTabBBBReviewLink, .cbtb #cbHeaderBBBReviewLink { visibility: hidden; }
-.cbtb .cbtb-modal, .cbtb .cbtb-modal.cbtb-fade.cbtb-in { position: fixed; z-index: 2147483647; inset: 0px; width: 100%; margin: 0px; padding: 0px; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; box-shadow: none; }
-.cbtb .cbtb-modal .cbtb-modal-dialog, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog { padding: 0px; top: 0px; width: 400px; max-width: 100%; margin: 0px auto; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content { border-radius: 0px 0px 6px 6px; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-close.ie8, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-close.ie8 { filter: none; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-row, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-row { padding: 0px; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header { padding: 5px 15px; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header a, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header a { outline: none; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header a img, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header a img { margin: 10px 0px; max-width: 67%; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header a img.accented, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header a img.accented { margin: 7px 0px 10px; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header .bbb, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header .bbb { max-width: 27%; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header .bbb img, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header .bbb img { margin: 0px; max-width: 100%; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header .cbtb-close, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-header .cbtb-close { position: absolute; top: 15px; right: 15px; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body p, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body p { line-height: 1.5em; margin-bottom: 5px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; font-size: 12px !important; font-weight: 400 !important; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body p.trust-statement, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body p.trust-statement { font-size: 14px !important; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body p.trust-statement strong, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body p.trust-statement strong { overflow-wrap: break-word; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body .bbb, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body .bbb { max-width: 20%; position: absolute; top: 10px; right: 10px; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body .bbb img, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body .bbb img { max-width: 100%; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body .cbtb-close, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .cbtb-modal-body .cbtb-close { position: absolute; bottom: 15px; right: 15px; }
-.cbtb .cbtb-modal .cbtb-modal-dialog .cbtb-modal-content .show-header, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog .cbtb-modal-content .show-header { display: none; }
-.cbtb .cbtb-modal-open { overflow: auto !important; }
-.cbtb .cbtb-modal-backdrop { opacity: 0 !important; }
-@media (min-width: 480px) {
-  .cbtb .cbtb-modal.cbtb-fade .cbtb-modal-dialog.tab.bottom-left, .cbtb .cbtb-modal.cbtb-fade .cbtb-modal-dialog.tab.bottom-right { transform: translate(0px, 25%); }
-  .cbtb .cbtb-modal.cbtb-in .cbtb-modal-dialog.tab.bottom-left, .cbtb .cbtb-modal.cbtb-in .cbtb-modal-dialog.tab.bottom-right { transform: translate(0px, 0px); }
-  .cbtb .cbtb-modal.cbtb-fade .cbtb-modal-dialog.tab, .cbtb .cbtb-modal.cbtb-in .cbtb-modal-dialog.tab, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.tab { position: absolute; margin: 0px; left: 10px; }
-  .cbtb .cbtb-modal.cbtb-fade .cbtb-modal-dialog.tab.top-right, .cbtb .cbtb-modal.cbtb-in .cbtb-modal-dialog.tab.top-right, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.tab.top-right, .cbtb .cbtb-modal.cbtb-fade .cbtb-modal-dialog.tab.bottom-right, .cbtb .cbtb-modal.cbtb-in .cbtb-modal-dialog.tab.bottom-right, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.tab.bottom-right { left: auto; right: 10px; }
-  .cbtb .cbtb-modal.cbtb-fade .cbtb-modal-dialog.tab.bottom-left, .cbtb .cbtb-modal.cbtb-in .cbtb-modal-dialog.tab.bottom-left, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.tab.bottom-left, .cbtb .cbtb-modal.cbtb-fade .cbtb-modal-dialog.tab.bottom-right, .cbtb .cbtb-modal.cbtb-in .cbtb-modal-dialog.tab.bottom-right, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.tab.bottom-right { top: auto; bottom: -6px; }
-  .cbtb .cbtb-modal.cbtb-fade .cbtb-modal-dialog.tab.bottom-left .cbtb-modal-content, .cbtb .cbtb-modal.cbtb-in .cbtb-modal-dialog.tab.bottom-left .cbtb-modal-content, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.tab.bottom-left .cbtb-modal-content, .cbtb .cbtb-modal.cbtb-fade .cbtb-modal-dialog.tab.bottom-right .cbtb-modal-content, .cbtb .cbtb-modal.cbtb-in .cbtb-modal-dialog.tab.bottom-right .cbtb-modal-content, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.tab.bottom-right .cbtb-modal-content { border-radius: 6px 6px 0px 0px; border-bottom-width: medium; border-bottom-style: none; border-bottom-color: currentcolor; }
-}
-@media (min-width: 768px) {
-  .cbtb .cbtb-modal .cbtb-modal-dialog.header, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.header { width: 550px; }
-  .cbtb .cbtb-modal .cbtb-modal-dialog.header .cbtb-modal-content .cbtb-modal-header a img, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.header .cbtb-modal-content .cbtb-modal-header a img { max-width: 400px; }
-  .cbtb .cbtb-modal .cbtb-modal-dialog.header .cbtb-modal-content .show-tab, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.header .cbtb-modal-content .show-tab { display: none; }
-  .cbtb .cbtb-modal .cbtb-modal-dialog.header .cbtb-modal-content .show-header, .cbtb .cbtb-modal.cbtb-fade.cbtb-in .cbtb-modal-dialog.header .cbtb-modal-content .show-header { display: block; }
-}
-.cbtb .trust-badge, .cbtb .cbtb-modal-content { border: 1px solid rgb(204, 204, 204); color: rgb(47, 72, 92) !important; }
-.cbtb .trust-badge .cbtb-modal-header, .cbtb .cbtb-modal-content .cbtb-modal-header { border-bottom: 1px solid rgb(204, 204, 204); }
-.cbtb .trust-badge .cbtb-close, .cbtb .cbtb-modal-content .cbtb-close { opacity: 0.6; color: rgb(47, 72, 92) !important; }
-.cbtb .trust-badge.light-grey, .cbtb .cbtb-modal-content.light-grey { border: 1px solid rgb(204, 204, 204); background-color: rgb(242, 242, 242) !important; color: rgb(47, 72, 92) !important; }
-.cbtb .trust-badge.light-grey .cbtb-modal-header, .cbtb .cbtb-modal-content.light-grey .cbtb-modal-header { border-bottom: 1px solid rgb(204, 204, 204); }
-.cbtb .trust-badge.light-grey .cbtb-close, .cbtb .cbtb-modal-content.light-grey .cbtb-close { color: rgb(47, 72, 92) !important; }
-.cbtb .trust-badge.dark-grey, .cbtb .cbtb-modal-content.dark-grey { border: 1px solid rgb(138, 149, 158); background-color: rgb(51, 51, 51) !important; color: rgb(204, 204, 204) !important; }
-.cbtb .trust-badge.dark-grey .cbtb-modal-header, .cbtb .cbtb-modal-content.dark-grey .cbtb-modal-header { border-bottom: 1px solid rgb(138, 149, 158); }
-.cbtb .trust-badge.dark-grey .cbtb-close, .cbtb .cbtb-modal-content.dark-grey .cbtb-close { color: rgb(204, 204, 204) !important; }
-.cbtb .trust-badge.black, .cbtb .cbtb-modal-content.black { border: 1px solid rgb(47, 72, 92); background-color: rgb(0, 0, 0) !important; color: rgb(255, 255, 255) !important; }
-.cbtb .trust-badge.black .cbtb-modal-header, .cbtb .cbtb-modal-content.black .cbtb-modal-header { border-bottom: 1px solid rgb(47, 72, 92); }
-.cbtb .trust-badge.black .cbtb-close, .cbtb .cbtb-modal-content.black .cbtb-close { color: rgb(255, 255, 255) !important; }
-.cbtb .trust-badge.light-blue, .cbtb .cbtb-modal-content.light-blue { border: 1px solid rgb(138, 149, 158); background-color: rgb(196, 220, 235) !important; color: rgb(47, 72, 92) !important; }
-.cbtb .trust-badge.light-blue .cbtb-modal-header, .cbtb .cbtb-modal-content.light-blue .cbtb-modal-header { border-bottom: 1px solid rgb(138, 149, 158); }
-.cbtb .trust-badge.light-blue .cbtb-close, .cbtb .cbtb-modal-content.light-blue .cbtb-close { color: rgb(47, 72, 92) !important; }
-.cbtb .trust-badge.dark-blue, .cbtb .cbtb-modal-content.dark-blue { border: 1px solid rgb(138, 149, 158); background-color: rgb(47, 72, 92) !important; color: rgb(204, 204, 204) !important; }
-.cbtb .trust-badge.dark-blue .cbtb-modal-header, .cbtb .cbtb-modal-content.dark-blue .cbtb-modal-header { border-bottom: 1px solid rgb(138, 149, 158); }
-.cbtb .trust-badge.dark-blue .cbtb-close, .cbtb .cbtb-modal-content.dark-blue .cbtb-close { color: rgb(204, 204, 204) !important; }
-.cbtb .trust-badge.light-yellow, .cbtb .cbtb-modal-content.light-yellow { border: 1px solid rgb(138, 149, 158); background-color: rgb(250, 235, 171) !important; color: rgb(47, 72, 92) !important; }
-.cbtb .trust-badge.light-yellow .cbtb-modal-header, .cbtb .cbtb-modal-content.light-yellow .cbtb-modal-header { border-bottom: 1px solid rgb(138, 149, 158); }
-.cbtb .trust-badge.light-yellow .cbtb-close, .cbtb .cbtb-modal-content.light-yellow .cbtb-close { color: rgb(47, 72, 92) !important; }
-.cbtb .trust-badge.light-green, .cbtb .cbtb-modal-content.light-green { border: 1px solid rgb(204, 204, 204); background-color: rgb(200, 237, 200) !important; color: rgb(47, 72, 92) !important; }
-.cbtb .trust-badge.light-green .cbtb-modal-header, .cbtb .cbtb-modal-content.light-green .cbtb-modal-header { border-bottom: 1px solid rgb(204, 204, 204); }
-.cbtb .trust-badge.light-green .cbtb-close, .cbtb .cbtb-modal-content.light-green .cbtb-close { color: rgb(47, 72, 92) !important; }
-.cbtb-modal-open { overflow: auto !important; }
-.cbtb-modal-backdrop, .cbtb-modal-backdrop.cbtb-fade.cbtb-in { position: fixed; inset: 0px; z-index: 1040; background-color: rgb(0, 0, 0); opacity: 0 !important; }
-.fancybox-margin { margin-right: 15px; }
-.fb_hidden { position: absolute; top: -10000px; z-index: 10001; }
-.fb_reposition { overflow: hidden; position: relative; }
-.fb_invisible { display: none; }
-.fb_reset { background: none; border: 0px; border-spacing: 0px; color: rgb(0, 0, 0); cursor: auto; direction: ltr; font-family: "lucida grande", tahoma, verdana, arial, sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 1; margin: 0px; overflow: visible; padding: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-shadow: none; text-transform: none; visibility: visible; white-space: normal; word-spacing: normal; }
-.fb_reset > div { overflow: hidden; }
-@keyframes fb_transform { 
-  0% { opacity: 0; transform: scale(0.95); }
-  100% { opacity: 1; transform: scale(1); }
-}
-.fb_animate { animation: 0.3s ease 0s 1 normal forwards running fb_transform; }
-.fb_dialog { background: rgba(82, 82, 82, 0.7); position: absolute; top: -10000px; z-index: 10001; }
-.fb_dialog_advanced { border-radius: 8px; padding: 10px; }
-.fb_dialog_content { background: rgb(255, 255, 255); color: rgb(55, 55, 55); }
-.fb_dialog_close_icon { background: url("https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png") 0px 0px no-repeat scroll transparent; cursor: pointer; display: block; height: 15px; position: absolute; right: 18px; top: 17px; width: 15px; }
-.fb_dialog_mobile .fb_dialog_close_icon { left: 5px; right: auto; top: 5px; }
-.fb_dialog_padding { background-color: transparent; position: absolute; width: 1px; z-index: -1; }
-.fb_dialog_close_icon:hover { background: url("https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png") 0px -15px no-repeat scroll transparent; }
-.fb_dialog_close_icon:active { background: url("https://connect.facebook.net/rsrc.php/v4/yq/r/IE9JII6Z1Ys.png") 0px -30px no-repeat scroll transparent; }
-.fb_dialog_iframe { line-height: 0; }
-.fb_dialog_content .dialog_title { background: rgb(109, 132, 180); border: 1px solid rgb(54, 88, 153); color: rgb(255, 255, 255); font-size: 14px; font-weight: 700; margin: 0px; }
-.fb_dialog_content .dialog_title > span { background: url("https://connect.facebook.net/rsrc.php/v4/yd/r/Cou7n-nqK52.gif") 5px 50% no-repeat; float: left; padding: 5px 0px 7px 26px; }
-body.fb_hidden { height: 100%; left: 0px; margin: 0px; overflow: visible; position: absolute; top: -10000px; transform: none; width: 100%; }
-.fb_dialog.fb_dialog_mobile.loading { background: url("https://connect.facebook.net/rsrc.php/v4/ya/r/3rhSv5V8j3o.gif") 50% 50% no-repeat rgb(255, 255, 255); min-height: 100%; min-width: 100%; overflow: hidden; position: absolute; top: 0px; z-index: 10001; }
-.fb_dialog.fb_dialog_mobile.loading.centered { background: none; height: auto; min-height: initial; min-width: initial; width: auto; }
-.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner { width: 100%; }
-.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content { background: none; }
-.loading.centered #fb_dialog_loader_close { clear: both; color: rgb(255, 255, 255); display: block; font-size: 18px; padding-top: 20px; }
-#fb-root #fb_dialog_ipad_overlay { background: rgba(0, 0, 0, 0.4); inset: 0px; min-height: 100%; position: absolute; width: 100%; z-index: 10000; }
-#fb-root #fb_dialog_ipad_overlay.hidden { display: none; }
-.fb_dialog.fb_dialog_mobile.loading iframe { visibility: hidden; }
-.fb_dialog_mobile .fb_dialog_iframe { position: sticky; top: 0px; }
-.fb_dialog_content .dialog_header { border-bottom: 1px solid rgb(4, 59, 135); border-top-color: rgb(4, 59, 135); border-right-color: rgb(4, 59, 135); border-left-color: rgb(4, 59, 135); box-shadow: rgb(255, 255, 255) 0px 1px 1px -1px inset; color: rgb(255, 255, 255); font: 700 14px Helvetica, sans-serif; text-overflow: ellipsis; text-shadow: rgba(0, 30, 84, 0.298) 0px -1px 0px; vertical-align: middle; white-space: nowrap; }
-.fb_dialog_content .dialog_header table { height: 43px; width: 100%; }
-.fb_dialog_content .dialog_header td.header_left { font-size: 12px; padding-left: 5px; vertical-align: middle; width: 60px; }
-.fb_dialog_content .dialog_header td.header_right { font-size: 12px; padding-right: 5px; vertical-align: middle; width: 60px; }
-.fb_dialog_content .touchable_button { background-clip: padding-box; border: 1px solid rgb(41, 72, 125); border-radius: 3px; display: inline-block; line-height: 18px; margin-top: 3px; max-width: 85px; padding: 4px 12px; position: relative; }
-.fb_dialog_content .dialog_header .touchable_button input { background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; color: rgb(255, 255, 255); font: 700 12px Helvetica, sans-serif; margin: 2px -12px; padding: 2px 6px 3px; text-shadow: rgba(0, 30, 84, 0.298) 0px -1px 0px; }
-.fb_dialog_content .dialog_header .header_center { color: rgb(255, 255, 255); font-size: 16px; font-weight: 700; line-height: 18px; text-align: center; vertical-align: middle; }
-.fb_dialog_content .dialog_content { background: url("https://connect.facebook.net/rsrc.php/v4/y9/r/jKEcVPZFk-2.gif") 50% 50% no-repeat; border-width: 0px 1px; border-style: none solid; border-color: currentcolor rgb(74, 74, 74); border-image: none; height: 150px; }
-.fb_dialog_content .dialog_footer { background: rgb(245, 246, 247); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(74, 74, 74) rgb(74, 74, 74); border-image: none; height: 40px; }
-#fb_dialog_loader_close { float: left; }
-.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon { visibility: hidden; }
-#fb_dialog_loader_spinner { animation: 1.2s linear 0s infinite normal none running rotateSpinner; background-color: transparent; background-image: url("https://connect.facebook.net/rsrc.php/v4/y2/r/onuUJj0tCqE.png"); background-position: 50% 50%; background-repeat: no-repeat; height: 24px; width: 24px; }
-@keyframes rotateSpinner { 
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-.fb_iframe_widget { display: inline-block; position: relative; }
-.fb_iframe_widget span { display: inline-block; position: relative; text-align: justify; }
-.fb_iframe_widget iframe { position: absolute; }
-.fb_iframe_widget_fluid_desktop, .fb_iframe_widget_fluid_desktop span, .fb_iframe_widget_fluid_desktop iframe { max-width: 100%; }
-.fb_iframe_widget_fluid_desktop iframe { min-width: 220px; position: relative; }
-.fb_iframe_widget_lift { z-index: 1; }
-.fb_iframe_widget_fluid { display: inline; }
-.fb_iframe_widget_fluid span { width: 100%; }</style><!-- Meta Pixel Code -->
+<!doctype html>
+<html lang="fr-FR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Plans de la Bible — Fiches d’étude en français</title>
+<meta name="description" content="Comprenez chaque livre de la Bible grâce à une fiche claire en français. Collection PDF à lire et à imprimer. Packs dès 7 €, pack complet à 11,99 €.">
+<meta name="theme-color" content="#203a4b"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<!-- Meta Pixel fourni par le propriétaire de l’offre. -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2140550059704088');
-fbq('track', 'PageView');
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2140550059704088');fbq('track','PageView');
 </script>
-<!-- End Meta Pixel Code -->
-<!-- UTMify: script de UTMs pour Hotmart -->
 <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
-</head><body class="wp-singular page-template-default page page-id-14312 wp-embed-responsive wp-theme-twentyfourteen op-live-editor-page op-plugin masthead-fixed full-width singular"><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2140550059704088&amp;ev=PageView&amp;noscript=1" alt=""/></noscript><div class="container main-content"><div id="content_area" class=""><div style='background-image: url("https://teachsundayschool.com/i/wp-content/uploads/2015/09/lightlinen1.png");background-repeat:repeat;background-color:#ededed;border-top-width:px;border-top-style:solid;border-top-color:;border-bottom-width:px;border-bottom-style:solid;border-bottom-color:;' class="row one-column cf ui-sortable lazyloaded" id="le_body_row_1"><div class="fixed-width"><div class="one-column column cols" id="le_body_row_1_col_1"><div class="element-container cf" id="le_body_row_1_col_1_el_1"><div class="element"><div class="image-caption" style="width:320px;margin-top:0px;margin-bottom:px;margin-right:auto;margin-left:auto;"><img decoding="async" alt="École du Dimanche — Leçons bibliques préparées pour les enseignants et parents chrétiens" border="0" class="full-width lazyloaded" src="assets/TSS-Logo-Black1-fr.png" loading="eager" width="320" height="73" style="width:320px;height:73px;max-width:100%;object-fit:cover;"></div></div></div></div></div></div><div class="row one-column cf ui-sortable   " id="le_body_row_2"><div class="fixed-width"><div class="one-column column cols" id="le_body_row_2_col_1"><div class="element-container cf" id="le_body_row_2_col_1_el_1"><div class="element"><div class="image-caption" style="width:881px;margin-top:0px;margin-bottom:px;margin-right:auto;margin-left:auto;"><img decoding="async" alt="Plans de la Bible" border="0" class="full-width lazyloaded" src="assets/BibleBlueprintsHeader-1-fr.png" style="--smush-placeholder-width: 881px; --smush-placeholder-aspect-ratio: 881/545;;aspect-ratio:881/545;object-fit:contain;;width:881px;max-width:100%;height:auto;aspect-ratio:881/545;object-fit:contain;;width:881px;max-width:100%;height:auto;aspect-ratio:881/545;object-fit:contain;" loading="eager" width="881" height="545"></div></div></div><div class="element-container cf" id="le_body_row_2_col_1_el_2"><div class="element"><h1 style='font-size:39px;font-family:"PT Sans Narrow", sans-serif;font-weight:bold;color:#484747;text-align:center;margin-top:5px;'>Des fiches d’étude d’une page pour chacun des livres de la Bible</h1></div></div><div class="element-container cf" id="le_body_row_2_col_1_el_3"><div class="element"><div class="image-caption" style="width:988px;margin-top:10px;margin-bottom:px;margin-right:auto;margin-left:auto;"><img decoding="async" alt="Plans de la Bible Fiches d’étude" border="0" class="full-width lazyloaded" src="assets/FourPageSpread-v2.png" style="--smush-placeholder-width: 988px; --smush-placeholder-aspect-ratio: 988/359;" loading="eager"></div></div></div><div class="element-container cf" id="le_body_row_2_col_1_el_4"><div class="element"><div class="styled-hr hr-style-10"><div class="hr-1"></div><div class="hr-2"><hr></div></div></div></div></div></div></div><div class="row five-columns cf ui-sortable   " id="le_body_row_3"><div class="fixed-width"><div class="one-fifth column cols narrow" id="le_body_row_3_col_1"></div><div class="three-fifths column cols" id="le_body_row_3_col_2"><div class="element-container cf" id="le_body_row_3_col_2_el_1"><div class="element"><div class="op-text-block" style="width:100%;text-align: left;"><p style="font-size:18px;">Soyons honnêtes : la Bible peut être <strong>intimidante</strong>.</p><p style="font-size:18px;">Elle compte environ <strong>1 200 pages,</strong> réparties en <strong>66 livres</strong>, écrits par plus de <strong>40 auteurs différents</strong>.</p><p style="font-size:18px;">Elle est <em>longue</em>, <em>dense</em>, et souvent<em> pleine de mots qui nous sont peu familiers</em>.</p><p style="font-size:18px;"><strong>Mais la Bible est aussi la <em>Parole de Dieu</em>.</strong></p><p style="font-size:18px;">(<em>et c’est plutôt important de la lire…</em>)</p><p style="font-size:18px;">Chez TeachSundaySchool.com, <strong>nous ne voulons pas que ceux qui étudient la Bible abandonnent avant même de commencer.</strong></p><p style="font-size:18px;">Nous voulons <strong>rendre la Bible plus accessible</strong> à toute personne qui s’y intéresse, quels que soient son âge, son sexe, ses revenus, son parcours, etc.</p><p style="font-size:18px;">Nos « <strong>Plans de la Bible</strong> » ont été conçus dans cet objectif.</p><p style="font-size:18px;">Chaque <strong>fiche</strong> donne une <strong>vue d’ensemble</strong> d’UN livre de la Bible. Au lieu de lire un chapitre ou un verset « à l’aveugle », nos Plans de la Bible offrent au lecteur un aperçu facile à assimiler, avec le contexte, les éléments de fond et la perspective essentiels.</p><p style="font-size:18px;">Ils sont le complément idéal de TOUTE leçon biblique.</p></div></div></div></div><div class="one-fifth column cols narrow" id="le_body_row_3_col_3"></div></div></div><div style='background-image: url("assets/BlueprintsBackground2.jpg");background-repeat:repeat;background-attachment:;border-top-width:1px;border-top-style:solid;border-top-color:;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:;' class="row one-column cf ui-sortable lazyloaded" id="le_body_row_4"><div class="op-row-video-background-wrap"><div class="op-video-background-overlay"></div></div><div style="opacity:0.0;background:;" class="op-row-image-color-overlay"></div><div class="fixed-width"><div class="one-column column cols" id="le_body_row_4_col_1"><div class="element-container cf" id="le_body_row_4_col_1_el_1"><div class="element"><h2 style="font-size:45px;color:#ffffff;text-align:center;line-height:34px;margin-top:40px;margin-bottom:25px;"><strong>Jetez un œil :<br> </strong></h2></div></div><div class="element-container cf" id="le_body_row_4_col_1_el_2"><div class="element"><div class="image-caption frame-style-5" style="width:1018px;margin-top:20px;margin-bottom:px;margin-right:auto;margin-left:auto;"><div class="frame-style-inner"><img decoding="async" alt="Exemple de fiche : Exode" border="0" class="full-width lazyloaded" src="assets/EXODUS1000-fr.jpg" style="--smush-placeholder-width: 1000px; --smush-placeholder-aspect-ratio: 1000/773;;aspect-ratio:1000/773;object-fit:contain;;width:1000px;max-width:100%;height:auto;aspect-ratio:1000/773;object-fit:contain;;width:1000px;max-width:100%;height:auto;aspect-ratio:1000/773;object-fit:contain;" loading="eager" width="1000" height="773"></div></div></div></div></div></div></div><div class="row one-column cf ui-sortable   " id="le_body_row_5"><div class="fixed-width"><div class="one-column column cols" id="le_body_row_5_col_1"><div class="element-container cf" id="le_body_row_5_col_1_el_1"><div class="element"><h2 style="font-size:32px;color:#000000;text-align:center;line-height:34px;margin-top:20px;margin-bottom:35px;"><strong>Voici ce que vous trouverez à l’intérieur :</strong></h2></div></div><div class="element-container cf" id="le_body_row_5_col_1_el_2"><div class="element"><div class="op-text-block" style="width:650px;margin: 0 auto;text-align:center;"><p style="font-size:18px;text-align: left;">Nous avons créé<strong> des fiches Plans de la Bible </strong>(comme celle ci-dessus) pour chacun des livres de l’<strong>Ancien et du Nouveau Testament</strong>!</p><p style="font-size:18px;text-align: left;"><strong>Vous pouvez imprimer autant d’exemplaires que nécessaire pour votre église ou votre usage privé :</strong></p><p style="font-size:18px;text-align: left;"></p></div></div></div></div></div></div><div class="row three-columns cf ui-sortable   " id="le_body_row_6"><div class="fixed-width"><div class="one-third column cols narrow" id="le_body_row_6_col_1"><div class="element-container cf" id="le_body_row_6_col_1_el_1"><div class="element"><div style="height:25px"></div></div></div><div class="element-container cf" id="le_body_row_6_col_1_el_2"><div class="element"><div class="image-caption frame-style-1" style="width:550px;margin-top:0px;margin-bottom:px;margin-right:auto;margin-left:auto;"><img decoding="async" alt="Ancien Testament Plans de la Bible" border="0" class="full-width ls-is-cached lazyloaded" src="assets/OTCover550-v2.png" style="--smush-placeholder-width: 550px; --smush-placeholder-aspect-ratio: 550/712;;aspect-ratio:550/712;object-fit:contain;;width:550px;max-width:100%;height:auto;aspect-ratio:550/712;object-fit:contain;;width:550px;max-width:100%;height:auto;aspect-ratio:550/712;object-fit:contain;" loading="eager" width="550" height="712"></div></div></div></div><div class="two-thirds column cols" id="le_body_row_6_col_2"><div class="element-container cf" id="le_body_row_6_col_2_el_1"><div class="element"><div class="image-caption" style="width:1046px;margin-top:0px;margin-bottom:px;margin-right:auto;margin-left:auto;"><img decoding="async" alt="Ancien Testament Plans de la Bible" border="0" class="full-width lazyloaded" src="assets/OTbooksLayout-v2.png" style="--smush-placeholder-width: 1046px; --smush-placeholder-aspect-ratio: 1046/752;" loading="eager"></div></div></div><div class="element-container cf" id="le_body_row_6_col_2_el_2"><div class="element"><div class="op-text-block" style="width:100%;text-align: left;"><p style="font-size:12px;font-style:normal;font-weight:normal;">Remarque : en plus des Plans de l’Ancien Testament ci-dessus, nous incluons également un supplément de deutérocanoniques facultatif contenant Tobie, Judith, Baruch, la Sagesse, le Siracide, 1 Maccabées et 2 Maccabées. Les Plans sont ainsi complets pour toutes les confessions.</p></div></div></div></div></div></div><div class="row three-columns cf ui-sortable   " id="le_body_row_7"><div class="fixed-width"><div class="one-third column cols narrow" id="le_body_row_7_col_1"><div class="element-container cf" id="le_body_row_7_col_1_el_1"><div class="element"><div style="height:25px"></div></div></div><div class="element-container cf" id="le_body_row_7_col_1_el_2"><div class="element"><div class="image-caption frame-style-1" style="width:550px;margin-top:0px;margin-bottom:px;margin-right:auto;margin-left:auto;"><img decoding="async" alt="Nouveau Testament Plans de la Bible" border="0" class="full-width ls-is-cached lazyloaded" src="assets/NTCover550-v2.png" style="--smush-placeholder-width: 550px; --smush-placeholder-aspect-ratio: 550/712;;aspect-ratio:550/712;object-fit:contain;;width:550px;max-width:100%;height:auto;aspect-ratio:550/712;object-fit:contain;;width:550px;max-width:100%;height:auto;aspect-ratio:550/712;object-fit:contain;" loading="eager" width="550" height="712"></div></div></div></div><div class="two-thirds column cols" id="le_body_row_7_col_2"><div class="element-container cf" id="le_body_row_7_col_2_el_1"><div class="element"><div class="image-caption" style="width:1046px;margin-top:0px;margin-bottom:px;margin-right:auto;margin-left:auto;"><img decoding="async" alt="Nouveau Testament Plans de la Bible" border="0" class="full-width lazyloaded" src="assets/NTBooksLayout-v2.png" style="--smush-placeholder-width: 1046px; --smush-placeholder-aspect-ratio: 1046/752;" loading="eager"></div></div></div></div></div></div><div style='background-image: url("assets/BlueprintsBackground2.jpg");background-repeat:repeat;background-attachment:;border-top-width:1px;border-top-style:solid;border-top-color:;border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:;' class="row one-column cf ui-sortable section lazyloaded" id="le_body_row_8"><div class="op-row-video-background-wrap"><div class="op-video-background-overlay"></div></div><div style="opacity:0.0;background:;" class="op-row-image-color-overlay"></div><div class="fixed-width"><div class="one-column column cols" id="le_body_row_8_col_1"><div class="element-container cf" id="le_body_row_8_col_1_el_1"><div class="element"><h2 class="headline-style-1" style="color:#ffffff;text-align:center;margin-top:35px;"><strong>Voici comment cela fonctionne</strong></h2></div></div><div class="element-container cf" id="le_body_row_8_col_1_el_2"><div class="element"><ul class="feature-block feature-block-style-2 feature-block-three-col cf"><li><div> <span class="feature-block-2-img-container"><img decoding="async" class="feature-block-2 lazyloaded" src="assets/325-alt.png" style="--smush-placeholder-width: 64px; --smush-placeholder-aspect-ratio: 64/64;" alt="" loading="eager"></span><h2 style="font-size:22px;font-weight:bold;color:#ffffff;">Obtenez un accès immédiat et sécurisé</h2><p style="font-size:18px;color:#ffffff;">Dès que votre commande sera traitée en toute sécurité, nous vous dirigerons vers un espace de téléchargement où vous pourrez accéder immédiatement aux Plans de la Bible.</p></div></li><li><div> <span class="feature-block-2-img-container"><img decoding="async" class="feature-block-2 lazyloaded" src="assets/252-alt.png" style="--smush-placeholder-width: 64px; --smush-placeholder-aspect-ratio: 64/64;" alt="" loading="eager"></span><h2 style="font-size:22px;font-weight:bold;color:#ffffff;">Imprimez les Plans</h2><p style="font-size:18px;color:#ffffff;">Imprimez les Plans de la Bible depuis votre ordinateur à la maison, au bureau ou à l’église, en quelques minutes seulement !</p></div></li><li><div> <span class="feature-block-2-img-container"><img decoding="async" class="feature-block-2 lazyloaded" src="assets/259-alt.png" style="--smush-placeholder-width: 64px; --smush-placeholder-aspect-ratio: 64/64;" alt="" loading="eager"></span><h2 style="font-size:22px;font-weight:bold;color:#ffffff;">Apprenez !</h2><p style="font-size:18px;color:#ffffff;">Les personnes de TOUS ÂGES qui étudient la Bible trouvent ces fiches remarquablement utiles pour apprendre.</p></div></li></ul></div></div></div></div></div><div class="row five-columns cf ui-sortable   " id="le_body_row_9"><div class="fixed-width"><div class="one-fifth column cols narrow" id="le_body_row_9_col_1"></div><div class="three-fifths column cols" id="le_body_row_9_col_2"><div class="element-container cf" id="le_body_row_9_col_2_el_1"><div class="element"><div style="height:20px"></div></div></div><div class="element-container cf" id="le_body_row_9_col_2_el_2"><div class="element"><div class="image-caption" style="width:1114px;margin-top:0px;margin-bottom:px;margin-right:auto;margin-left:auto;"><img decoding="async" alt="" border="0" class="full-width lazyloaded" src="assets/custom-guarantee-2-fr.png" loading="eager" width="1114" height="588" style=";width:1114px;max-width:100%;height:auto;aspect-ratio:1114/588;object-fit:contain;;width:1114px;max-width:100%;height:auto;aspect-ratio:1114/588;object-fit:contain;"></div></div></div><div class="element-container cf" id="le_body_row_9_col_2_el_3"><div class="element"><h2 style="font-size:32px;color:#f01900;text-align:center;line-height:34px;margin-top:20px;margin-bottom:35px;"><strong>Notre promesse :</strong></h2></div></div><div class="element-container cf" id="le_body_row_9_col_2_el_4"><div class="element"><div class="op-text-block" style="width:100%;text-align: left;"><p class="bodytext">Nous sommes tellement convaincus que vous aimerez les <strong>Plans de la Bible</strong> que nous vous offrons <strong>une garantie de remboursement à 100 % sans condition.</strong></p><p class="bodytext">Si vous n’êtes pas entièrement satisfait du contenu, il vous suffit de nous en informer dans les 60 jours suivant votre achat et <strong>nous vous rembourserons</strong> intégralement, sans vous poser la moindre question !</p></div></div></div></div><div class="one-fifth column cols narrow" id="le_body_row_9_col_3"></div></div></div><div style='background-image: url("assets/BlueprintsBackground2.jpg");background-repeat:repeat;background-attachment:;padding-top:20px;padding-bottom:20px;border-top-width:0px;border-top-style:solid;border-top-color:;border-bottom-width:0px;border-bottom-style:solid;border-bottom-color:;' class="row one-column cf ui-sortable lazyloaded" id="le_body_row_10"><div class="op-row-video-background-wrap"><div class="op-video-background-overlay"></div></div><div style="opacity:0.0;background:;" class="op-row-image-color-overlay"></div><div class="fixed-width"><div class="one-column column cols" id="le_body_row_10_col_1"><div class="element-container cf" id="le_body_row_10_col_1_el_1"><div class="element"><h2 style="font-size:40px;font-weight:bold;color:#fcfcfc;text-align:center;"><strong>Obtenez votre exemplaire maintenant !</strong></h2></div></div></div></div></div><div class="row two-columns cf ui-sortable   " id="le_body_row_11"><div class="fixed-width"><div class="one-half column cols" id="le_body_row_11_col_1"><div class="element-container cf" id="le_body_row_11_col_1_el_1"><div class="element"><div class="image-caption" style="width:881px;margin-top:30px;margin-bottom:1px;margin-right:auto;margin-left:auto;"><img decoding="async" alt="Plans de la Bible: Ancien et Nouveau Testament" border="0" class="full-width ls-is-cached lazyloaded" src="assets/BibleBlueprintsHeader-1-fr.png" style="--smush-placeholder-width: 881px; --smush-placeholder-aspect-ratio: 881/545;;aspect-ratio:881/545;object-fit:contain;;width:881px;max-width:100%;height:auto;aspect-ratio:881/545;object-fit:contain;;width:881px;max-width:100%;height:auto;aspect-ratio:881/545;object-fit:contain;" loading="eager" width="881" height="545"></div></div></div></div><div class="one-half column cols" id="le_body_row_11_col_2"><div class="element-container cf" id="le_body_row_11_col_2_el_1"><div class="element"><h2 class="headline-style-2" style="text-align:center;">Oui ! Il me le faut !</h2></div></div><div class="element-container cf" id="le_body_row_11_col_2_el_2"><div class="element"><div class="op-text-block" style="width:100%;text-align: left;"><p>Je souhaite accéder au pack « <strong>Plans de la Bible</strong> ». Merci de me donner un accès IMMÉDIAT aux éléments suivants, dès maintenant :</p></div></div></div><div class="element-container cf" id="le_body_row_11_col_2_el_3"><div class="element"><ul class="bullet-list size-16" style="width:400px;margin-left:auto;margin-right:auto;"><li style='background-image: url("assets/28.png");background-repeat:no-repeat;' class=" lazyloaded">Plans de la Bible imprimables</li><li style='background-image: url("assets/28.png");background-repeat:no-repeat;' class=" lazyloaded">Garantie de remboursement de 60 jours</li><li style='background-image: url("assets/28.png");background-repeat:no-repeat;' class=" lazyloaded">Droit de réimpression illimitée pour une seule église ou un seul foyer</li></ul></div></div></div></div></div><div class="row one-column cf ui-sortable   " id="le_body_row_12"><div class="fixed-width"><div class="one-column column cols" id="le_body_row_12_col_1"><div class="element-container cf" id="le_body_row_12_col_1_el_1"><div class="element"><h2 class="headline-style-7" style='font-family:"Shadows Into Light", sans-serif;text-align:center;'><span>Choisissez le pack qui vous convient le mieux :</span></h2></div></div></div></div></div><div class="row three-columns cf ui-sortable   " id="le_body_row_13"><div class="fixed-width"><div class="one-third column cols narrow" id="le_body_row_13_col_1"><div class="element-container cf" id="le_body_row_13_col_1_el_1"><div class="element"><h2 class="headline-style-2" style="text-align:center;"><strong>Option n° 1 :</strong><br> Ancien Testament</h2></div></div><div class="element-container cf" id="le_body_row_13_col_1_el_2"><div class="element"><div class="image-caption frame-style-3" style="width:568px;margin-top:1px;margin-bottom:5px;margin-right:auto;margin-left:auto;"><div class="frame-style-inner"><img decoding="async" alt="" border="0" class="full-width lazyloaded" src="assets/OTCover550-v2.png" style="--smush-placeholder-width: 550px; --smush-placeholder-aspect-ratio: 550/712;;aspect-ratio:550/712;object-fit:contain;;width:550px;max-width:100%;height:auto;aspect-ratio:550/712;object-fit:contain;;width:550px;max-width:100%;height:auto;aspect-ratio:550/712;object-fit:contain;" loading="eager" width="550" height="712"></div></div></div></div><div class="element-container cf" id="le_body_row_13_col_1_el_3"><div class="element"><div class="op-text-block" style="width:550px;margin: 0 auto;text-align:center;"><h3 style="text-align: center;">Prix : <s>17,00 €</s><br> <strong>Aujourd’hui seulement <span style="color: #d10000;">7 €</span></strong></h3><p style="font-size:18px;color:#000000;text-align: center;"></p></div></div></div><div class="element-container cf" id="le_body_row_13_col_1_el_4"><div class="element"><div style="text-align:center"><div class="button-with-cc"> <a href="https://pay.hotmart.com/S107908208R?checkoutMode=10" target="_blank" class="button-atc-1" aria-label="Ajouter au panier" rel="noopener"><img decoding="async" alt="Ajouter au panier" src="assets/atc-1-placeholder.gif" class=" lazyloaded" style="--smush-placeholder-width: 362px; --smush-placeholder-aspect-ratio: 362/94;" loading="eager"></a><div><img decoding="async" alt="" width="48" height="31" src="assets/3mastercard.png" class=" lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"><img decoding="async" alt="" width="48" height="31" src="assets/3visa.png" class=" lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"><img decoding="async" alt="" width="48" height="31" src="assets/amex-2.png" class=" lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"><img decoding="async" alt="" width="48" height="31" src="assets/paypal-2.png" class=" lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"></div></div></div></div></div></div><div class="one-third column cols narrow" id="le_body_row_13_col_2"><div class="element-container cf" id="le_body_row_13_col_2_el_1"><div class="element"><h2 class="headline-style-2" style="text-align:center;"><strong>Option n° 2 :</strong><br> Nouveau Testament</h2></div></div><div class="element-container cf" id="le_body_row_13_col_2_el_2"><div class="element"><div class="image-caption frame-style-3" style="width:568px;margin-top:1px;margin-bottom:5px;margin-right:auto;margin-left:auto;"><div class="frame-style-inner"><img decoding="async" alt="" border="0" class="full-width lazyloaded" src="assets/NTCover550-v2.png" style="--smush-placeholder-width: 550px; --smush-placeholder-aspect-ratio: 550/712;;aspect-ratio:550/712;object-fit:contain;;width:550px;max-width:100%;height:auto;aspect-ratio:550/712;object-fit:contain;;width:550px;max-width:100%;height:auto;aspect-ratio:550/712;object-fit:contain;" loading="eager" width="550" height="712"></div></div></div></div><div class="element-container cf" id="le_body_row_13_col_2_el_3"><div class="element"><div class="op-text-block" style="width:550px;margin: 0 auto;text-align:center;"><h3 style="text-align: center;">Prix : <s>17,00 €</s><br> <strong>Aujourd’hui seulement <span style="color: #d10000;">7 €</span></strong></h3><p style="font-size:18px;color:#000000;text-align: center;"></p></div></div></div><div class="element-container cf" id="le_body_row_13_col_2_el_4"><div class="element"><div style="text-align:center"><div class="button-with-cc"> <a href="https://pay.hotmart.com/N107908260P?checkoutMode=10" target="_blank" class="button-atc-1" aria-label="Ajouter au panier" rel="noopener"><img decoding="async" alt="Ajouter au panier" src="assets/atc-1-placeholder.gif" class=" lazyloaded" style="--smush-placeholder-width: 362px; --smush-placeholder-aspect-ratio: 362/94;" loading="eager"></a><div><img decoding="async" alt="" width="48" height="31" src="assets/3mastercard.png" class=" lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"><img decoding="async" alt="" width="48" height="31" src="assets/3visa.png" class=" ls-is-cached lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"><img decoding="async" alt="" width="48" height="31" src="assets/amex-2.png" class=" ls-is-cached lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"><img decoding="async" alt="" width="48" height="31" src="assets/paypal-2.png" class=" ls-is-cached lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"></div></div></div></div></div></div><div class="one-third column cols narrow" id="le_body_row_13_col_3"><div class="element-container cf" id="le_body_row_13_col_3_el_1"><div class="element"><h2 class="headline-style-2" style="text-align:center;"><strong>Option n° 3 :</strong><br> Pack complet</h2></div></div><div class="element-container cf" id="le_body_row_13_col_3_el_2"><div class="element"><div class="image-caption" style="width:550px;margin-top:0px;margin-bottom:0px;margin-right:auto;margin-left:auto;"><img decoding="async" alt="Plans de la Bible: Ancien et Nouveau Testament" border="0" class="full-width lazyloaded" src="assets/CoversSidebySide-v2.png" style="--smush-placeholder-width: 550px; --smush-placeholder-aspect-ratio: 550/712;;width:550px;max-width:100%;height:auto;aspect-ratio:550/712;object-fit:contain;;width:550px;max-width:100%;height:auto;aspect-ratio:550/712;object-fit:contain;" loading="eager" width="550" height="712"></div></div></div><div class="element-container cf" id="le_body_row_13_col_3_el_3"><div class="element"><h2 style='font-size:36px;font-family:"The Girl Next Door", sans-serif;font-weight:bold;color:#ec3636;text-align:center;'>Le plus avantageux</h2></div></div><div class="element-container cf" id="le_body_row_13_col_3_el_4"><div class="element"><div class="op-text-block" style="width:550px;margin: 0 auto;text-align:center;"><h3 style="text-align: center;">Prix : <s>34,00 €</s><br> <strong>Aujourd’hui seulement <span style="color: #d10000;">11,99 €</span></strong></h3></div></div></div><div class="element-container cf" id="le_body_row_13_col_3_el_5"><div class="element"><div style="text-align:center"><div class="button-with-cc"> <a href="https://pay.hotmart.com/N107908028P?checkoutMode=10" target="_blank" class="button-atc-1" aria-label="Ajouter au panier" rel="noopener"><img decoding="async" alt="Ajouter au panier" src="assets/atc-1-placeholder.gif" class=" ls-is-cached lazyloaded" style="--smush-placeholder-width: 362px; --smush-placeholder-aspect-ratio: 362/94;" loading="eager"></a><div><img decoding="async" alt="" width="48" height="31" src="assets/3mastercard.png" class=" ls-is-cached lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"><img decoding="async" alt="" width="48" height="31" src="assets/3visa.png" class=" ls-is-cached lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"><img decoding="async" alt="" width="48" height="31" src="assets/amex-2.png" class=" ls-is-cached lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"><img decoding="async" alt="" width="48" height="31" src="assets/paypal-2.png" class=" ls-is-cached lazyloaded" style="--smush-placeholder-width: 48px; --smush-placeholder-aspect-ratio: 48/31;" loading="eager"></div></div></div></div></div></div></div></div><div class="row one-column cf ui-sortable   " id="le_body_row_14"><div class="fixed-width"><div class="one-column column cols" id="le_body_row_14_col_1"><div class="element-container cf" id="le_body_row_14_col_1_el_1"><div class="element"><div class="styled-hr hr-style-0"><div class="hr-2"><hr></div></div></div></div><div class="element-container cf" id="le_body_row_14_col_1_el_2"><div class="element"><div class="op-text-block" style="width:100%;text-align: left;"><p style="text-align: center;"><a href="https://teachsundayschool.com/i/esquemasdelabiblia/"><em>Cliquez ici pour la version espagnole !</em></a></p></div></div></div></div></div></div></div><div class="full-width footer small-footer-text"><div class="row"><div class="fixed-width"><nav class="footer-navigation"><ul id="nav-footer" class="inline-nav"><li id="menu-item-24037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24037"><a href="https://teachsundayschool.com/i/contact/">Nous contacter</a></li><li id="menu-item-1041" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1041"><a href="https://teachsundayschool.com/i/privacypolicy/">Politique de confidentialité</a></li><li id="menu-item-20600" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20600"><a href="https://teachsundayschool.com/i/affiliates/">Affiliés</a></li><li id="menu-item-24038" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24038"><a href="https://shop.teachsundayschool.com/pages/reviews">Avis clients</a></li></ul></nav><p class="footer-copyright">Copyright — École du Dimanche — Tous droits réservés</p></div></div></div></div>  </body></html>
+<script src="assets/page.js" defer></script>
+</head>
+<body>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2140550059704088&amp;ev=PageView&amp;noscript=1" alt=""></noscript>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header><div class="wrap brand"><a href="#contenu" aria-label="Plans de la Bible, accueil"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M3 6c5-2 9-1 13 1 4-2 8-3 13-1v21c-5-2-9-1-13 1-4-2-8-3-13-1Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 7v21" stroke="currentColor" stroke-width="2"/></svg>Plans de la Bible</a><span>Édition française</span></div></header>
+<main id="contenu">
+<section class="hero wrap">
+<div class="hero-copy">
+<p class="eyebrow">Une fiche par livre. Une vue d’ensemble.</p>
+<h1>Comprenez chaque livre de la Bible grâce à une fiche claire, en français.</h1>
+<p class="lead">Le contexte, les grandes étapes et les passages à retrouver. Des fiches <strong>PDF à consulter et à imprimer</strong> pour accompagner votre lecture.</p>
+<p class="hero-price">Pack complet <strong>11,99 €</strong><span>Packs par Testament dès 7 €</span></p>
+<a id="hero-cta" class="button" href="https://pay.hotmart.com/N107908028P?checkoutMode=10">Accéder au pack complet — 11,99 € <span aria-hidden="true">→</span></a>
+<a class="text-link" href="#packs">Comparer les 3 packs</a>
+<p class="micro">Téléchargement après confirmation du paiement.<br>Paiement sécurisé via Hotmart.</p>
+</div>
+<figure class="hero-product">
+<div class="fiches-grid" aria-label="Aperçu de 12 fiches de la collection française">
+<img src="assets/fiche-genese.webp" width="640" height="453" alt="Aperçu de la fiche Genèse" fetchpriority="high">
+<img src="assets/fiche-exode.webp" width="640" height="453" alt="Aperçu de la fiche Exode">
+<img src="assets/fiche-levitique.webp" width="640" height="453" alt="Aperçu de la fiche Lévitique">
+<img src="assets/fiche-nombres.webp" width="640" height="453" alt="Aperçu de la fiche Nombres">
+<img src="assets/fiche-deuteronome.webp" width="640" height="453" alt="Aperçu de la fiche Deutéronome">
+<img src="assets/fiche-josue.webp" width="640" height="453" alt="Aperçu de la fiche Josué">
+<img src="assets/fiche-juges.webp" width="640" height="453" alt="Aperçu de la fiche Juges">
+<img src="assets/fiche-ruth.webp" width="640" height="453" alt="Aperçu de la fiche Ruth">
+<img src="assets/fiche-1-samuel.webp" width="640" height="453" alt="Aperçu de la fiche 1 Samuel">
+<img src="assets/fiche-2-samuel.webp" width="640" height="453" alt="Aperçu de la fiche 2 Samuel">
+<img src="assets/fiche-1-rois.webp" width="640" height="453" alt="Aperçu de la fiche 1 Rois">
+<img src="assets/fiche-2-rois.webp" width="640" height="453" alt="Aperçu de la fiche 2 Rois">
+</div>
+<figcaption>Extraits réels de la collection • Texte en français</figcaption>
+<div class="product-facts"><span><strong>73</strong> fiches dans le pack complet</span><span><strong>A4</strong> format paysage</span><span><strong>PDF</strong> écran ou impression</span></div>
+</figure>
+</section>
+<section class="packs-section" id="packs"><div class="wrap">
+<p class="eyebrow">Choisissez votre collection</p><h2>Un Testament ou toute la collection.</h2><p class="section-lead">Choisissez les livres que vous souhaitez étudier. Chaque pack est un téléchargement PDF en français.</p>
+<div class="packs">
+<article class="pack complete"><span class="pack-label">Toute la collection</span><div class="pack-top"><div><h3>Pack complet</h3><p class="price">11,99 €</p><p class="price-note">Ancien + Nouveau Testament</p></div><img src="assets/fiche-collection.webp" width="640" height="453" loading="lazy" alt="Couverture du PDF Collection complète Plans de la Bible"></div>
+<ul><li><strong>66 fiches</strong> : 39 livres de l’Ancien Testament et 27 du Nouveau.</li><li><strong>7 fiches supplémentaires</strong> pour les livres deutérocanoniques.</li><li>Vue d’ensemble, étapes de lecture, passages repères et questions d’étude.</li><li><strong>Mode d’emploi en 6 étapes</strong> : lecture, passages repères, impression et étude en groupe.</li><li><strong>Sommaire cliquable</strong> : ouvrez directement la fiche du livre choisi.</li><li><strong>Texte sélectionnable</strong> et format A4 paysage pour lire à l’écran ou imprimer.</li></ul>
+<a class="button" href="https://pay.hotmart.com/N107908028P?checkoutMode=10">Choisir le pack complet — 11,99 €</a><p class="micro">2,01 € de moins que les deux Testaments achetés séparément.</p>
+</article>
+<article class="pack"><span class="pack-label neutral">Collection par Testament</span><h3>Ancien Testament</h3><p class="price">7 €</p><p>Pour accompagner votre lecture, de la Genèse à Malachie.</p><ul><li>Une fiche pour chacun des 39 livres.</li><li>Contexte, étapes et références bibliques.</li><li>PDF en français à lire et à imprimer.</li></ul><a class="button outline" href="https://pay.hotmart.com/S107908208R?checkoutMode=10">Choisir l’Ancien Testament — 7 €</a></article>
+<article class="pack"><span class="pack-label neutral">Collection par Testament</span><h3>Nouveau Testament</h3><p class="price">7 €</p><p>Pour accompagner votre lecture, de Matthieu à l’Apocalypse.</p><ul><li>Une fiche pour chacun des 27 livres.</li><li>Contexte, étapes et références bibliques.</li><li>PDF en français à lire et à imprimer.</li></ul><a class="button outline" href="https://pay.hotmart.com/N107908260P?checkoutMode=10">Choisir le Nouveau Testament — 7 €</a></article>
+</div><p class="pack-footnote">Produit numérique. Aucun livre imprimé n’est envoyé. Le supplément de 7 livres est facultatif dans votre parcours de lecture.</p>
+</div></section>
+<section class="wrap audience" id="pour-vous"><div class="audience-copy"><p class="eyebrow">Pour votre prochaine étude</p><h2>Des repères pour votre lecture personnelle, en famille ou à l’église.</h2><p>Vous souhaitez retrouver le contexte d’un livre, suivre ses grandes étapes ou préparer un passage à lire ensemble ? Gardez sa fiche près de votre Bible et revenez aux références indiquées.</p></div><div class="audience-note"><strong>Un support pour accompagner la Bible.</strong><p>La collection réunit des résumés et des repères. Utilisez-la avec votre Bible pour lire et approfondir les passages cités.</p></div></section>
+<section class="wrap section sample" id="apercu">
+<div class="section-intro"><p class="eyebrow">Regardez avant de choisir</p><h2>Voici une fiche que vous recevrez.</h2><p class="section-lead">La fiche de l’Exode rassemble le contexte du livre, ses étapes principales et les chapitres correspondants. Vous savez où vous êtes dans le récit et quels passages ouvrir dans votre Bible.</p></div>
+<figure class="sample-sheet"><a href="apercu-exode.html" aria-label="Ouvrir la fiche Exode en grand"><img src="assets/exode-apercu-900.webp" srcset="assets/exode-apercu-900.webp 900w, assets/exode-apercu.webp 1800w" sizes="(max-width:700px) 92vw, 1040px" width="1800" height="1273" loading="lazy" alt="Fiche Exode : contexte, six étapes du récit, chapitres et passages repères"></a><figcaption>Extrait réel du PDF français. Touchez l’image pour l’ouvrir en grand.</figcaption></figure>
+<a class="button outline sample-open" href="apercu-exode.html">Ouvrir la fiche Exode en grand <span aria-hidden="true">↗</span></a>
+<div class="three-columns benefits"><article><span class="number">01</span><h3>Comprenez le contexte</h3><p>Retrouvez le cadre du récit et les thèmes majeurs avant de commencer votre lecture.</p></article><article><span class="number">02</span><h3>Suivez les étapes</h3><p>Visualisez les grandes parties du livre et les chapitres associés sur une même fiche.</p></article><article><span class="number">03</span><h3>Approfondissez un passage</h3><p>Revenez aux références indiquées, puis utilisez la question d’étude pour réfléchir au texte.</p></article></div>
+<a class="button small-button" href="#packs">Choisir mon pack — dès 7 €</a>
+</section>
+<section class="reading-section"><div class="wrap reading">
+<div><p class="eyebrow">Pour votre prochaine lecture</p><h2>Gardez le fil du livre que vous étudiez.</h2><p>Vous ouvrez votre Bible, mais vous avez parfois du mal à relier un chapitre à l’ensemble du livre ? Les Plans de la Bible vous donnent des repères à garder sous les yeux pendant votre lecture.</p><p><strong>Une fiche par livre</strong> : la vue d’ensemble, les principales étapes et les références sont réunies au même endroit. Vous pouvez lire à votre rythme, revenir sur un passage ou préparer une étude en famille ou à l’église.</p><p>Les fiches accompagnent le texte biblique. Elles vous invitent à y revenir pour approfondir votre compréhension.</p></div>
+<div class="reading-card"><h3>Vos 3 repères de lecture</h3><ol><li><strong>Le contexte</strong><span>De quoi parle ce livre ? Où se situe le récit ?</span></li><li><strong>Le parcours</strong><span>Quelles sont ses grandes étapes ? Quels chapitres lire ?</span></li><li><strong>Le passage</strong><span>Quelle référence approfondir et quelle question se poser ?</span></li></ol><p class="start-note"><strong>Pour commencer :</strong> ouvrez le sommaire du PDF, choisissez le livre que vous lisez et consultez sa vue d’ensemble. Le mode d’emploi inclus explique comment poursuivre.</p></div>
+</div></section>
+<section class="wrap section">
+<p class="eyebrow">Simple à utiliser</p><h2>Choisissez. Téléchargez. Ouvrez votre Bible.</h2>
+<div class="three-columns steps"><article><span class="number">1</span><h3>Choisissez votre pack</h3><p>Sélectionnez votre collection et effectuez votre paiement sur Hotmart.</p></article><article><span class="number">2</span><h3>Téléchargez les PDF</h3><p>Accédez aux fichiers après confirmation du paiement. Conservez-les sur votre appareil.</p></article><article><span class="number">3</span><h3>Lisez ou imprimez</h3><p>Consultez vos fiches à l’écran ou imprimez-les au format A4 paysage pour les garder près de vous.</p></article></div>
+<div class="guarantee"><span class="guarantee-icon" aria-hidden="true">✓</span><div><h3>Garantie de remboursement de 30 jours</h3><p>Si la collection ne vous convient pas, vous disposez de 30 jours après la confirmation de votre achat pour demander un remboursement via <a href="https://refund.hotmart.com/">le portail de remboursement Hotmart</a>.</p></div></div>
+</section>
+<section class="faq-section" id="questions"><div class="wrap faq"><p class="eyebrow">Vos questions, avant de choisir</p><h2>Tout ce qu’il faut savoir.</h2>
+<details><summary>Est-ce un livre imprimé ou un téléchargement ?</summary><p>Il s’agit de fichiers PDF à télécharger. Aucun livre physique n’est envoyé. Vous pouvez consulter les fiches à l’écran ou les imprimer vous-même.</p></details>
+<details><summary>Les fiches sont-elles entièrement en français ?</summary><p>Oui. Les titres, les résumés, les étapes de lecture, les références et les questions d’étude de cette collection sont en français.</p></details>
+<details><summary>Que contient le pack complet ?</summary><p>Il comprend 66 fiches pour l’Ancien et le Nouveau Testament, plus 7 fiches supplémentaires : Tobie, Judith, Baruch, Sagesse, Siracide, 1 Maccabées et 2 Maccabées. La collection complète contient 80 pages, dont 73 fiches d’étude et les pages d’introduction et de sommaire.</p></details>
+<details><summary>Quelle est la différence entre les trois packs ?</summary><p>Le pack Ancien Testament couvre les 39 livres de la Genèse à Malachie. Le pack Nouveau Testament couvre les 27 livres de Matthieu à l’Apocalypse. Le pack complet réunit les deux Testaments et le supplément de 7 livres.</p></details>
+<details><summary>Quand recevrai-je les fichiers ?</summary><p>L’accès au téléchargement est fourni après confirmation du paiement. Conservez l’e-mail de confirmation de votre achat pour retrouver vos informations d’accès.</p></details>
+<details><summary>Comment demander un remboursement ?</summary><p>Vous pouvez faire votre demande dans les 30 jours suivant la confirmation de votre achat. Ouvrez <a href="https://refund.hotmart.com/">le portail de remboursement Hotmart</a> et munissez-vous du numéro de transaction reçu par e-mail. Suivez les étapes de vérification indiquées par Hotmart.</p></details>
+<details><summary>Puis-je lire les PDF sur mon téléphone ?</summary><p>Oui, avec un lecteur PDF. Les fiches sont au format A4 paysage : agrandissez le texte ou tournez votre appareil pour lire confortablement. Elles peuvent aussi être consultées sur ordinateur ou tablette.</p></details>
+<details><summary>Puis-je imprimer des fiches pour ma famille ou mon église ?</summary><p>La licence de cette offre autorise les impressions pour un seul foyer ou une seule église. Elle ne permet pas de revendre les fichiers ni de les distribuer publiquement.</p></details>
+<details><summary>Les fiches remplacent-elles la lecture de la Bible ?</summary><p>Ce sont des repères pour accompagner votre lecture. Les résumés et les questions vous aident à retrouver les passages et à revenir au texte biblique.</p></details>
+</div></section>
+<section class="final-cta wrap section"><p class="eyebrow">Un livre. Une fiche. Une vue d’ensemble.</p><h2>Gardez des repères clairs pour votre étude de la Bible.</h2><p>La collection complète en français : <strong>11,99 €</strong>.<br>PDF à consulter et à imprimer.</p><a class="button small-button" href="https://pay.hotmart.com/N107908028P?checkoutMode=10">Accéder au pack complet — 11,99 €</a><a class="text-link" href="#packs">Voir les packs par Testament à 7 €</a><p class="micro">Accès après confirmation du paiement • Paiement via Hotmart</p></section>
+</main>
+<footer><div class="wrap"><strong>Plans de la Bible</strong><p>Ressource pédagogique en français.</p><a href="#questions">Questions fréquentes</a> <span aria-hidden="true">•</span> <a href="#packs">Choisir un pack</a></div></footer>
+<div class="mobile-purchase" id="mobile-purchase" hidden><div><strong>Pack complet</strong><span>11,99 € · PDF en français</span></div><a class="button" href="https://pay.hotmart.com/N107908028P?checkoutMode=10" aria-label="Accéder au pack complet à 11,99 euros">Accéder au pack →</a></div>
+</body></html>
